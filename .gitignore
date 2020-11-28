@@ -28,4 +28,7 @@ eslint_report.htm
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
+
+.idea
+.gitignore
 .history

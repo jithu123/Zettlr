@@ -230,6 +230,11 @@ const { clipboard } = require('electron');
     markdownInline(cm, '`', '`', 'comment')
   }
 
+  CodeMirror.commands.markdownSwiftCode = function (cm) {
+    if (cm.getOption('disableInput')) return CodeMirror.Pass
+    markdownInline(cm, '``` swift \n', '\n```')
+  }
+
   // Commenting
   CodeMirror.commands.markdownComment = function (cm) {
     if (cm.getOption('disableInput')) return CodeMirror.Pass
@@ -312,6 +317,7 @@ const { clipboard } = require('electron');
     // Replace with changes selections
     cm.doc.replaceSelections(sel)
   }
+
 
   // Inserts image template
   CodeMirror.commands.markdownImage = function (cm) {

@@ -165,6 +165,7 @@
     "moment": "^2.27.0",
     "nspell": "^2.1.1",
     "on-change": "^2.0.1",
+    "process": "^0.11.10",
     "rimraf": "^3.0.2",
     "sanitize-filename": "^1.6.3",
     "semver": "^7.3.2",

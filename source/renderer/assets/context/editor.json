@@ -21,6 +21,11 @@
     "content": "markdownLink"
   },
   {
+    "label": "menu.insert_swift_code",
+    "command": "cm-command",
+    "content": "markdownSwiftCode"
+  },
+  {
     "label": "menu.insert_ol",
     "command": "cm-command",
     "content": "markdownMakeOrderedList"
