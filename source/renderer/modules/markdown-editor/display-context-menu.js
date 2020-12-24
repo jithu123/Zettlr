@@ -29,6 +29,10 @@ const TEMPLATE = [
     command: 'markdownLink'
   },
   {
+    label: 'menu.insert_swift_code',
+    command: 'markdownSwiftCode'
+  },
+  {
     label: 'menu.insert_ol',
     command: 'markdownMakeOrderedList'
   },
@@ -93,6 +97,7 @@ const readOnlyDisabled = [
   'menu.bold',
   'menu.italic',
   'menu.insert_link',
+  'menu.insert_swift_code',
   'menu.insert_ol',
   'menu.insert_ul',
   'menu.insert_tasklist',

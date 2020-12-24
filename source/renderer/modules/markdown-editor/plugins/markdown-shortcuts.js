@@ -229,7 +229,7 @@ const { getListOrderedRE, getListTaskListRE, getListUnorderedCMRE, getUrlRE, get
   }
 
   CodeMirror.commands.markdownSwiftCode = function (cm) {
-    if (cm.getOption('disableInput')) return CodeMirror.Pass
+    if (cm.isReadOnly()) return CodeMirror.Pass
     markdownInline(cm, '``` swift \n', '\n```')
   }
 
