@@ -1,3 +1,27 @@
+# 1.8.5
+
+## A Note to Apple Silicon users
+
+If you possess one of the new Apple devices sporting Apple's M1 chip, please see whether or not the application is able to run the built-in pandoc (which is still compiled for 64 bit). If your bundled exporter fails, please report an issue. We are also planning to ship native M1 builds as well soon, and this might also cause some issues, so please keep an eye out for such errors.
+
+## GUI and Functionality
+
+- 64bit applications will now run the built-in Pandoc. To see whether your application runs using the bundled Pandoc, open the developer logs and look for "pandoc." If Zettlr has used the built-in Pandoc for an export, the pandoc command will not begin with "pandoc" but with the full, absolute path to the bundled Pandoc binary. **If your application does use the bundled Pandoc, you can uninstall any system-wide Pandoc installationn; Zettlr should still be able to export. If not, please consider reporting a bug**!
+- Made the dialogs' tab lists more accessible for screen readers.
+- Fixed the other files's extension icons in the sidebar -- they now also display in dark mode.
+
+## Under the Hood
+
+- Removed jQuery UI from the dialog classes completely.
+- Removed jQuery from the editor controller.
+- Removed jQuery from the updater.
+- Removed jQuery from the tag cloud dialog.
+- Removed jQuery from the stats dialog.
+- Removed jQuery from PDF preferences.
+- Removed jQuery from the CSS dialog.
+- Removed jQuery from the file manager.
+- Removed jQuery from the Pomodoro counter.
+
 # 1.8.4
 
 ## Deprecating 32 bit builds
